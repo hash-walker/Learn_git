@@ -1,0 +1,13 @@
+Command Syntax
+Throughout this course, you'll see commands written like this:
+
+command <required> [optional]
+Copy icon
+Arguments in angle brackets <> are mandatory and must be provided when running the command.
+Arguments in square brackets [] are optional and can be included if needed.
+For example, to create a new directory in your terminal, you would run:
+
+mkdir <directory-name>
+Copy icon
+mkdir is the command
+<directory-name> is a required argument

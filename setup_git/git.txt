@@ -1,0 +1,33 @@
+Git
+Git is the distributed version control system (VCS). Nearly every developer in the world uses it to manage their code. It has quite a monopoly on VCS. Developers use Git to:
+
+Keep a history of their code changes
+Revert mistakes made in their code
+Collaborate with other developers
+Make backups of their code
+And much more
+
+Boot.dev CLI
+Throughout this course, you'll be using the Boot.dev CLI to run our tests (which are just CLI commands) against your local environment. Install it now if you don't already have it. All the instructions and troubleshooting info are on the GitHub page.
+
+Make sure the Boot.dev CLI install worked:
+
+bootdev --version
+Copy icon
+If you're stuck, reach out in the help forums of the Discord.
+
+Once the bootdev command is working, log in and follow the instructions:
+
+bootdev login
+Copy icon
+Run vs. Submit
+Each lesson has a list of "commands" it runs on your local machine, and a series of tests it will check against the results of the command.
+
+There are two ways to run these commands: run and submit.
+
+bootdev run <id>: This will run the commands and show you the results. It's to be used for debugging, but it won't tell you whether or not you've passed the tests explicitly.
+bootdev run <id> -s: This will run the commands and give you pass/fail feedback. It will also mark the lesson as complete on the website. If you get it wrong however, you'll potentially lose your sharpshooter spree, so be sure to use run first!
+You can copy the run/submit commands with the id ready-to-go from the test panel.
+
+Assignment
+Once you have the CLI installed and you're logged in, copy and paste the run command from the right into your terminal and execute it. If it's doing what you'd expect (printing rebasing is based), then run the submit command.

@@ -1,0 +1,24 @@
+Install Git
+Git is a command line tool, just like the Boot.dev CLI. Let's install it.
+
+Assignment
+First, check and see if you already have Git installed. Open a terminal and type:
+
+git --version
+Copy icon
+If you see a version number, you're good to go! Run and submit the tests.
+
+Otherwise, you'll need to install Git. See below for help.
+
+Windows (WSL) / Linux (Ubuntu)
+sudo apt install git-all
+Copy icon
+macOS
+Running git --version should prompt you to install Git. If not, you can use Homebrew:
+
+brew install git
+Copy icon
+Alternatively, you can use Xcode:
+
+Install Xcode from the App Store if you don't already have it.
+Run xcode-select --install in a new terminal window. This should install the "Command Line Tools" package, which includes Git.
