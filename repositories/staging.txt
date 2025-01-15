@@ -1,0 +1,17 @@
+Staging
+The contents.md file has been created, but as we saw, it's untracked. We need to stage it (add it to the "index") with the git add command before committing it later.
+
+Without staging, every file in the repository would be included in every commit, but that's often not what you want.
+
+Here's the command:
+
+git add <path-to-file | pattern>
+
+For example:
+
+git add i-use-arch.btw
+Copy icon
+Assignment
+Add contents.md to the staging area.
+Run git status again.
+Run and submit the CLI tests.
