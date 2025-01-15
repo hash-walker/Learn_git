@@ -1,0 +1,11 @@
+Get
+We've used --list to see all the configuration values, but the --get flag is useful for getting a single value.
+
+git config --get <key>
+Copy icon
+Keys are in the format <section>.<keyname>. For example:
+
+user.name
+webflyx.ceo
+Assignment
+Use the --get flag to get the value of the webflyx.valuation key from your local Git configuration.
