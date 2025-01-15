@@ -1,0 +1,16 @@
+The Object File
+Let's take a look at what's inside this suspicious commit object file.
+
+Assignment
+Try to cat the contents of the commit object file (which will interpret the contents as text).
+cat path/to/file/from-before
+Copy icon
+Nope... it's a mess. The contents have been compressed to raw bytes!
+
+Try again with the xxd command to print the contents of the file in hexadecimal format:
+xxd path/to/file/from-before
+Copy icon
+Note: you may need to install xxd.
+
+Do that again, but redirect the output to a temporary file so the tests can read it:
+xxd path/to/file/from-before > /tmp/commit_object_hex.txt
