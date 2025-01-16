@@ -1,0 +1,15 @@
+Default Branch
+We've been using Git's default master branch. Interestingly, GitHub (a website where you can remotely store Git projects) recently changed its default branch from master to main. As a general rule, I recommend using main as your default branch if you work primarily with GitHub, as we will.
+
+How to Rename a Branch
+git branch -m oldname newname
+Copy icon
+Assignment
+Change your global Git configuration to use main as the default branch. Change the init.defaultBranch key to main.
+Check your current branch:
+git branch
+Copy icon
+You should notice that you're still on master! That's because all you did was change the default branch for new repositories.
+
+To switch this repo to use main, rename the master branch to main.
+Run git branch again to make sure you're on the main branch.
