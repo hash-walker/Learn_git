@@ -1,0 +1,18 @@
+Run Rebase
+To use rebase to bring changes from main onto a current branch (let's pretend we're on one called jdsl), we would run this while on the jdsl branch:
+
+git rebase main
+Copy icon
+This will do the following:
+
+Checkout the latest commit from main into a temporary location
+Replay each commit from jdsl one at a time onto this temporary location
+Update the jdsl branch to point to the last replayed commit in the temporary location, making this the new permanent jdsl.
+The rebase does not affect the main branch; jdsl now includes all changes from main.
+Assignment
+Add two commits to the update_dune branch. Add the following quotes to the quotes/dune.md file's list:
+- "The spice must flow." (Use a commit message starting with H:)
+- "Fear is the mind-killer." (Use a commit message starting with I:)
+
+While still on the update_dune branch, rebase your changes onto main. main is the base, and we want update_dune's changes on top of it.
+Run git log --oneline. Even though we originally branched off the D commit from main, we should see a nice linear history from A to I.
