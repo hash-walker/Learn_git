@@ -1,0 +1,42 @@
+Gitignore
+As you've seen, it's pretty normal to use the following workflow from the top level of your repo:
+
+git add .
+git commit -m "some message here"
+git push origin main
+A problem arises when we want to put files in our project's directory, but we don't want to track them with Git. A .gitignore file solves this. For example, if you work with Python, you probably want to ignore automatically generated files like .pyc and __pycache__. If you are building a server, you probably want to ignore .env files that might hold private keys. If you (I'm sorry) work with JavaScript, you might want to ignore the node_modules directory.
+
+node_modules
+
+Here's an example .gitignore file, which exists at the root of a repo:
+
+node_modules
+Copy icon
+This will ignore every path containing node_modules as a "section" (directory name or file name). It ignores:
+
+node_modules/code.js
+src/node_modules/code.js
+src/node_modules
+It does not ignore:
+
+src/node_modules_2/code.js
+env/node_modules_3
+Assignment
+Create secure/passwords.txt and create the secure directory if it doesn't exist. Paste the following into the file and save it:
+root: 12345
+admin: 54321
+lane: 00000
+prime: APICJJY$$PO!NJ@L
+Copy icon
+Create a file called guilty_pleasures.md in the repo's root directory and paste the following into it:
+# Guilty Pleasures (tell no one)
+
+- The Notebook
+- The Love Guru
+- Birdemic: Shock and Terror
+- Troll 2
+- Manos: The Hands of Fate
+- Sharknado
+Copy icon
+Create a .gitignore file at the root of the repo and ensure both of those files are ignored. Ignore the entire secure directory, not just passwords.txt.
+Commit your changes, including the .gitignore file, with a message starting with M:.

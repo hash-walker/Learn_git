@@ -1,0 +1,47 @@
+What to Ignore
+We've talked about how to ignore files, but the deeper question is what should you ignore? Here are some rules of thumb for coding projects:
+
+Ignore things that can be generated (e.g. compiled code, minified files, etc.)
+Ignore dependencies (e.g. node_modules, venv, packages, etc.)
+Ignore things that are personal or specific to how you like to work (e.g. editor settings)
+Ignore things that are sensitive or dangerous (e.g. .env files, passwords, API keys, etc.)
+Part Deux
+We've covered a lot of Git basics so far. There's certainly more you can learn, but now you have a solid foundation to work with as a developer. If you want more, there is a Part 2 of Learn Git where we cover more advanced topics.
+
+Assignment
+Let's ignore a generated file. We ignore generated files because they can easily be regenerated from the stuff we do track. In this case, we're going to use Pandoc to generate HTML from a Markdown file. We'll ignore the HTML file, but commit the Markdown file.
+
+Install Pandoc, a command line tool for converting between different document formats. If you're on Mac:
+brew install pandoc
+Copy icon
+If you're on Ubuntu (e.g. WSL):
+
+sudo apt install pandoc
+Copy icon
+Run pandoc --version to ensure it's installed. See the installation guide if you're having trouble.
+Create a new file at the root of the repository called advert.md with the following content:
+# WebFlyx: The Future of Content
+
+You thought you knew what the web was capable of. You were _wrong_. WebFlyx is taking the world of online entertainment to an entirely new level. Grab a copy of it at your local electronics store today!
+
+**Available on Floppy Disk!**
+
+_While supplies last._
+Copy icon
+Run the following command to generate an HTML document (webpage) from the Markdown file:
+pandoc advert.md -o advert.html
+Copy icon
+For fun, open the HTML in your browser to see a nicely formatted version of the Markdown file.
+# WSL
+explorer.exe advert.html
+
+# Mac
+open advert.html
+Copy icon
+Add the advert.html file to the .gitignore file and commit your changes with a message starting with N:.
+Run and submit the tests from the root of the project.
+
+Tip
+If you accidentally staged or committed advert.html, adding it to the .gitignore file won't remove it from the repository. You'll need to remove it manually (at which point it will continue to be ignored going forward):
+
+git rm --cached advert.html
